@@ -19,4 +19,11 @@ class FuncionarioController extends Controller
        ];
        dd($infoFuncionario);
     }
+
+    public function show(){
+        return view("funcionario",[
+            "nome" => "Operario Junior",
+            "salario"=> 2000
+        ]);
+    }
 }
